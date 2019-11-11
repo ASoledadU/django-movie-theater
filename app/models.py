@@ -2,9 +2,9 @@ from django.db import models
 
 class Movie(models.Model):
     title = models.TextField()
-    rating = models.IntegerField()
+    rating = models.TextField()
     genre = models.TextField()
-    runtime = models.CharField()
+    runtime = models.TextField()
 
 class Showing(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
