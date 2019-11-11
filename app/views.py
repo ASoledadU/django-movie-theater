@@ -23,4 +23,4 @@ def new_ticket(request, id):
             ticket.save()
             return redirect("ticket_detail". ticket.id)
         else:
-            return render(request, "new_ticket.html", {"movie": movie, "name":name, "showing_id":showing_id})
+            return render(request, "new_ticket.html", {"movie": movie, "form":form})

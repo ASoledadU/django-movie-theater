@@ -8,7 +8,7 @@ class Movie(models.Model):
 
 class Showing(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    showtime = models.TimeField()
+    showtime = models.TextField()
 
 class Ticket(models.Model):
     name = models.TextField()
